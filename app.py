@@ -1,4 +1,5 @@
 from flask import Flask
+from flask.views import MethodView
 from fizzbuzz import FizzBuzz
 
 app = Flask(__name__)
