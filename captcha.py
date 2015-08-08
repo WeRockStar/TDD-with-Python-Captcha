@@ -12,7 +12,8 @@ class Captcha():
 
 class SecordPatternOperland():
     left = 0
-    patternL = {'1' : 'One' , '2' : 'Two'}
+    right = 0
+    patternDigit = {'1' : 'One' , '2' : 'Two'}
     def __init__(self , pattern ,left , operator , right):
         self.pattern = pattern
         self.left = left
@@ -20,4 +21,7 @@ class SecordPatternOperland():
         self.right = right
 
     def leftOperator(self):
-        return self.patternL[str(self.left)]
+        return self.patternDigit[str(self.left)]
+
+    def rightOperator(self):
+        return self.patternDigit[str(self.right)]
