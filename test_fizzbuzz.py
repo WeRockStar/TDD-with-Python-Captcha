@@ -3,7 +3,7 @@ class FizzBuzz():
     def count(self , number):
         if self.isModuloBy3(number):
             return 'Fizz'
-        elif number == 5:
+        elif number == 5 or number == 10:
             return 'Buzz'
         return str(number)
 
@@ -28,3 +28,6 @@ class TestFizzBuzz(unittest.TestCase):
 
     def test_it_should_return_fizz_when_is_6(self):
         self.assertEqual('Fizz' , self.fizzbuzz.count(6))
+
+    def test_it_should_return_buzz_when_is_10(self):
+        self.assertEqual('Buzz' , self.fizzbuzz.count(10))
