@@ -5,13 +5,15 @@ class FizzBuzz():
             return 'Fizz'
         elif self.isModuloBy5(number):
             return 'Buzz'
+        elif number == 15:
+            return "FizzBuzz"
         return str(number)
 
     def isModuloBy3(self , number):
-        return number % 3 == 0
+        return number % 3 == 0 and number != 15
 
     def isModuloBy5(self , number):
-        return number % 5 == 0
+        return number % 5 == 0 and number != 15
 
 
 class TestFizzBuzz(unittest.TestCase):
@@ -35,3 +37,6 @@ class TestFizzBuzz(unittest.TestCase):
 
     def test_it_should_return_buzz_when_is_10(self):
         self.assertEqual('Buzz' , self.fizzbuzz.count(10))
+
+    def test_it_should_return_fizzbuzz_when_is_15(self):
+        self.assertEqual('FizzBuzz' , self.fizzbuzz.count(15))
