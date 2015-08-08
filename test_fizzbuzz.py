@@ -3,12 +3,16 @@ class FizzBuzz():
     def count(self , number):
         if self.isModuloBy3(number):
             return 'Fizz'
-        elif number == 5 or number == 10:
+        elif self.isModuloBy5(number):
             return 'Buzz'
         return str(number)
 
     def isModuloBy3(self , number):
         return number % 3 == 0
+
+    def isModuloBy5(self , number):
+        return number % 5 == 0
+
 
 class TestFizzBuzz(unittest.TestCase):
     def setUp(self):
