@@ -1,3 +1,4 @@
+
 class Captcha():
     pattern = 0
     def __init__(self , pattern ,left , operator , right):

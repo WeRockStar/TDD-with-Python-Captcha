@@ -7,9 +7,9 @@ class Operand():
                 5: 'Five',
                 6: 'Six',
                 7: 'Seven',
-                8: 'eight',
+                8: 'Eight',
                 9: 'Nine'
-            }
+}
 class OperandString(Operand):
     op = 0
     def __init__(self , op):
