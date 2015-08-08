@@ -10,6 +10,6 @@ class TestFizzBuzz(unittest.TestCase):
         self.fizzbuzz = FizzBuzz()
 
     def test_it_should_return_1_when_is_1(self):
-        self.assertEqual('1' , fizzbuzz.count(1))
+        self.assertEqual('1' , self.fizzbuzz.count(1))
     def test_it_should_return_2_when_is_2(self):
-        self.assertEqual('2' , fizzbuzz.count(2))
+        self.assertEqual('2' , self.fizzbuzz.count(2))
