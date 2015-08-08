@@ -11,7 +11,6 @@ class TestToFizz(unittest.TestCase):
     def test_it_should_return_fizz_when_is_6(self):
         self.assertEqual('Fizz' , self.fizzbuzz.count(6))
 
-
 class TestToBuzz(unittest.TestCase):
     def setUp(self):
         self.fizzbuzz = FizzBuzz()
