@@ -1,4 +1,6 @@
+from radomizer import Randomizer
 class CaptchaController():
-    def toJson():
-        json = "{\'left\':1 , \'operand\':1 , \'right\' : 1}"
-        return json
+    def getJson(self , number):
+        rand = Randomizer()
+        self.json = '{\'left\':%s , \'operand\':1 , \'right\' : 1}'%rand.getOperand()
+        return self.json
